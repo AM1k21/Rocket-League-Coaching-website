@@ -15,16 +15,36 @@
         <p>Great place to learn Rocket League</p>
       </header>
       <header class="notin">
-       
+     
       </header>
 
+      <section class="ariel_info" id="ariel_info" >        
+        <p>
+You will learn:  1, idk
+                 2, nvm
+ </p>
+        <button class="button-6" >Buy course</button>
+        <button class="button-6" onclick="Disappear();" >Less Info </button>
+        
 
+      </section>
       <section class="left_"  >        
         <h2>Wanna Learn Ariels?</h2>
         <p>
          Then the Ariel Course is for You!
         </p>
-        <button>More Info</button>
+        
+        <script>
+        function Disappear(){
+          info = document.getElementById('ariel_info');
+          info.style.display = 'none';
+          }
+        function Appear(){
+          info = document.getElementById('ariel_info');
+          info.style.display = 'block';
+          }
+          </script>
+          <button onclick="Appear()" class="button-6" >More Info</button>
         
 
       </section>
